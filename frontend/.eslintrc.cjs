@@ -1,0 +1,13 @@
+module.exports = {
+  root: true,
+  env: { browser: true, node: true, es2022: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    '@vue/eslint-config-prettier'
+  ],
+  rules: {
+    'vue/multi-word-component-names': 'off',
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }]
+  }
+}

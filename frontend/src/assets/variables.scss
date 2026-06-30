@@ -1,0 +1,9 @@
+// SCSS 变量 —— 通过 vite 自动注入所有组件，无需手动 import
+// 这些变量在编译时使用，不参与暗色/浅色主题切换
+
+$primary: #1890ff;
+$primary-light: #40a9ff;
+$primary-dark: #096dd9;
+$success: #52c41a;
+$warning: #faad14;
+$danger: #ff4d4f;

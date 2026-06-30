@@ -1,0 +1,32 @@
+{
+  "name": "vue-course-tracker-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .vue,.js --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.0",
+    "@vueuse/core": "^10.7.0",
+    "axios": "^1.6.0",
+    "echarts": "^5.5.0",
+    "element-plus": "^2.7.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.0",
+    "sass": "^1.70.0",
+    "vue": "^3.4.0",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "eslint": "^10.5.0",
+    "eslint-plugin-vue": "^10.9.2",
+    "prettier": "^3.8.4",
+    "vite": "^5.1.0"
+  }
+}

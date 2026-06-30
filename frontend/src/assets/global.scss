@@ -1,0 +1,96 @@
+// global.scss —— 企业级设计规范（浅色/暗色双主题）
+// 暗色模式使用 Element Plus 官方 class="dark" API，无需手动覆盖 --el-* 变量
+@use 'variables.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
+}
+
+// ======================== 浅色主题（默认） ========================
+:root {
+  --primary: #1890ff;
+  --primary-light: #40a9ff;
+  --primary-dark: #096dd9;
+  --success: #52c41a;
+  --warning: #faad14;
+  --danger: #ff4d4f;
+  --text-primary: rgba(0, 0, 0, 0.85);
+  --text-secondary: rgba(0, 0, 0, 0.65);
+  --text-muted: rgba(0, 0, 0, 0.45);
+  --border-color: #f0f0f0;
+  --bg-page: #f0f2f5;
+  --bg-card: #ffffff;
+  --bg-sidebar: #001529;
+  --bg-topbar: #ffffff;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-topbar: 0 1px 4px rgba(0, 0, 0, 0.06);
+
+  // 覆盖 Element Plus 主色为品牌蓝
+  --el-color-primary: #1890ff;
+  --el-color-primary-light-3: #40a9ff;
+  --el-border-radius-base: 4px;
+}
+
+// ======================== 暗色主题（Element Plus 官方 dark class） ========================
+// 只需要覆盖项目自定义变量，Element Plus 组件颜色由官方 class="dark" 自动处理
+html.dark {
+  --primary: #4096ff;
+  --primary-light: #69b1ff;
+  --primary-dark: #1677ff;
+  --success: #73d13d;
+  --warning: #ffc53d;
+  --danger: #ff7875;
+  --text-primary: #e5eaf3;
+  --text-secondary: #a3a6ad;
+  --text-muted: #8d9095;
+  --border-color: #4c4d4f;
+  --bg-page: #0a0a0a;
+  --bg-card: #1d1e1f;
+  --bg-sidebar: #141414;
+  --bg-topbar: #1d1e1f;
+  --shadow-sm: none;
+  --shadow-topbar: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover { color: $primary-light; }
+}
+
+ul, ol { list-style: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #4c4d4f;
+}
+
+// ======================== 共享工具类 ========================
+.error-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #909399;
+  p {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}

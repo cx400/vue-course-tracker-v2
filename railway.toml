@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+
+[build.nixpacks]
+nixPkgs = ["nodejs_22"]
+
+[deploy]
+startCommand = "cd backend && npm install --production && node app.js"
+buildCommand = "cd frontend && npm install && npm run build"
