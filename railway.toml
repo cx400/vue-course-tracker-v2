@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+
+[build.nixpacks]
+nixPkgs = ["nodejs_20"]
+
+[deploy]
+buildCommand = "npm install && npm run build"
+startCommand = "npm start"
+
+[env]
+NODE_ENV = "production"
