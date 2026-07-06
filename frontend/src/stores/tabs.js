@@ -1,5 +1,3 @@
-// 标签页状态管理：记录已打开的标签页列表，支持关闭、切换等操作
-
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'

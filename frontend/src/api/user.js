@@ -1,4 +1,3 @@
-// api/user.js —— 用户相关的后端接口调用
 import request from './request'
 
 // 注册新用户

@@ -1,4 +1,3 @@
-// router/index.js —— 路由入口，组装模块、守卫、动态注册
 import { createRouter, createWebHistory } from 'vue-router'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'

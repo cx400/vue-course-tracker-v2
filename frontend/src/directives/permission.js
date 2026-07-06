@@ -1,4 +1,3 @@
-// v-permission 自定义指令 —— 控制元素在指定角色下才显示
 // 用法：v-permission="'teacher'"  或  v-permission="['teacher', 'student']"
 
 import { useUserStore } from '@/stores/user'

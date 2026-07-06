@@ -1,4 +1,3 @@
-// api/course.js —— 课程相关的后端接口调用
 import request from './request'
 
 // 创建课程

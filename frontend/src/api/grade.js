@@ -1,4 +1,3 @@
-// api/grade.js —— 成绩相关的后端接口调用
 import request from './request'
 
 // 学生获取自己的成绩汇总（按课程分组）

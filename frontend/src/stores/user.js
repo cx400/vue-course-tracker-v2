@@ -1,4 +1,3 @@
-// stores/user.js —— 用户状态管理（Pinia Store）
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { STORAGE_KEYS } from '@/constants'

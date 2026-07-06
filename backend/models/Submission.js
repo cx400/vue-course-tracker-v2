@@ -3,7 +3,6 @@ const sequelize = require('../config/database');
 const User = require('./User');
 const Assignment = require('./Assignment');
 
-// 学生提交记录模型——记录每个学生提交的作业和老师打的分数
 const Submission = sequelize.define('Submission', {
   // 学生提交的内容/答案
   content: {

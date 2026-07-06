@@ -1,4 +1,3 @@
-// 通用路由 —— 所有角色可访问
 import { ROLES } from '@/constants'
 
 export default [

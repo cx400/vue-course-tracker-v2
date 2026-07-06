@@ -1,6 +1,3 @@
-// 全局常量 —— 消除魔法字符串，统一管理项目中的角色/学期/存储key等不变值
-
-// 角色
 export const ROLES = { TEACHER: 'teacher', STUDENT: 'student' }
 
 // 角色中文名

@@ -1,4 +1,3 @@
-// api/request.js —— axios 封装，统一管理后端请求的配置
 import axios from 'axios'
 import { ElMessage, ElNotification } from 'element-plus'
 import { STORAGE_KEYS, PATHS } from '@/constants'

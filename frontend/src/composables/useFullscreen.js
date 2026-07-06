@@ -1,4 +1,3 @@
-// 全屏切换组合函数 —— 从 Topbar.vue 提取，可在任何组件中复用
 import { ref, onMounted, onUnmounted } from 'vue'
 
 export function useFullscreen() {
