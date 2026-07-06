@@ -6,7 +6,7 @@ nixPkgs = ["nodejs_20"]
 
 [deploy]
 buildCommand = "npm install && npm run build"
-startCommand = "npm start"
+startCommand = "node backend/app.js"
 
 [env]
 NODE_ENV = "production"
